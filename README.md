@@ -11,8 +11,8 @@
 ### Usage:
 ```java
     ConsoleManager manager = new DefaultConsoleManager(); // Create a new console manager
-    manager.setTextColor(Color.RED); // Set text color
-    manager.setBackgroundColor(Color.BLUE); // Set background color
+    manager.setTextColor(TextColor.LIGHT_RED); // Set text color
+    manager.setBackgroundColor(BackgroundColor.DARK_BLUE); // Set background color
    
    manager.println("Hello World!"); // Print text
 ```
