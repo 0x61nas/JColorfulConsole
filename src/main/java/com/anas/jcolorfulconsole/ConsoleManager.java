@@ -4,9 +4,10 @@ import com.anas.jcolorfulconsole.color.BackgroundColor;
 import com.anas.jcolorfulconsole.color.TextColor;
 
 public interface ConsoleManager {
-    void setColor(TextColor textColor);
+    void setTextColor(TextColor textColor);
     void setBackgroundColor(BackgroundColor backgroundColor);
-    void setProperty(ConsoleProperty property);
+    void addProperty(ConsoleProperty property);
+    void removeProperty(ConsoleProperty property);
 
     void print(String text);
     void print(String text, ConsoleProperty... properties);

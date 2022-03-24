@@ -23,6 +23,9 @@ public class TextColor extends ASCIIColor {
     public static final TextColor LIGHT_CYAN = new TextColor((short)96);
     public static final TextColor LIGHT_GRAY = new TextColor((short)97);
 
+    public static final TextColor DEFAULT = new TextColor(ASCIIColor.DEFAULT.getCode());
+
+
     protected TextColor(short code) {
         super(code);
     }

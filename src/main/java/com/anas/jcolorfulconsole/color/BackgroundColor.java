@@ -23,6 +23,8 @@ public class BackgroundColor extends ASCIIColor {
     public static final BackgroundColor LIGHT_WHITE = new BackgroundColor((short)7);
     public static final BackgroundColor LIGHT_GRAY = new BackgroundColor((short)107);
 
+    public static final BackgroundColor DEFAULT = new BackgroundColor(ASCIIColor.DEFAULT.getCode());
+
     protected BackgroundColor(short code) {
         super(code);
     }

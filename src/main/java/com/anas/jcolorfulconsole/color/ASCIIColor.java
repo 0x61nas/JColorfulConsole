@@ -9,7 +9,7 @@ public class ASCIIColor implements ConsoleProperty {
         this.code = code;
     }
 
-    public static final ASCIIColor RESET = new ASCIIColor((short)0);
+    public static final ASCIIColor DEFAULT = new ASCIIColor((short)-1);
 
     @Override
     public short getCode() {
