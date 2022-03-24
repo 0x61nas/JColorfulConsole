@@ -3,7 +3,7 @@ package com.anas.jcolorfulconsole;
 import com.anas.jcolorfulconsole.color.BackgroundColor;
 import com.anas.jcolorfulconsole.color.TextColor;
 
-public interface ConsoleManger {
+public interface ConsoleManager {
     void setColor(TextColor textColor);
     void setBackgroundColor(BackgroundColor backgroundColor);
     void setProperty(ConsoleProperty property);
