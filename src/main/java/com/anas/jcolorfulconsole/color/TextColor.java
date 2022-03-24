@@ -12,6 +12,8 @@ public class TextColor extends ASCIIColor {
     public static final TextColor DARK_WHITE = new TextColor((short)0);
     public static final TextColor DARK_GRY = new TextColor((short)47);
 
+    public static final TextColor TRANSPARENT = new TextColor((short)2);
+
     public static final TextColor LIGHT_BLACK = new TextColor((short)90);
     public static final TextColor LIGHT_RED = new TextColor((short)91);
     public static final TextColor LIGHT_GREEN = new TextColor((short)92);
