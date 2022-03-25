@@ -13,6 +13,13 @@
     <description>A colorful console for Java</description>
     <url>https://jitpack.io/#Anas-Elgarhy/JColorfulConsole</url>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub OWNER Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/Anas-Elgarhy/JColorfulConsole</url>
+        </repository>
+    </distributionManagement>
 
     <build>
         <plugins>
