@@ -14,7 +14,7 @@
 <dependency>
     <groupId>com.anas.jcolorfulconsole</groupId>
     <artifactId>jcolorfulconsole</artifactId>
-    <version>0.1.4</version>
+    <version>0.1.5</version>
 </dependency>
 ```
 **Step 2**. run this command `mvn install`
@@ -33,7 +33,7 @@ allprojects {
 **Step 2**. Add the dependency
 ```gradle
 	dependencies {
-	        implementation 'com.github.Anas-Elgarhy:JColorfulConsole:0.1.4'
+	        implementation 'com.github.Anas-Elgarhy:JColorfulConsole:0.1.5'
 	}
 ```
 
