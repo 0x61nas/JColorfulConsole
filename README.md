@@ -9,24 +9,15 @@
  - Support text style.
 
 ### How to add this library into your project
-#### Maven:
-**Step 1**. Add the JitPack repository to your build file
+**Step 1**. Add the dependency
 ```xml
-     <repositories>
-        <repository>
-             <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
-        </repository>
-    </repositories>
+<dependency>
+    <groupId>com.anas.jcolorfulconsole</groupId>
+    <artifactId>jcolorfulconsole</artifactId>
+    <version>0.1.4</version>
+</dependency>
 ```
-**Step 2**. Add the dependency
-```xml
-	<dependency>
-	    <groupId>com.github.Anas-Elgarhy</groupId>
-	    <artifactId>JColorfulConsole</artifactId>
-	    <version>0.1.4</version>
-	</dependency>
-```
+**Step 2**. run this command `mvn install`
 
 #### Gradle:
 **Step 1**. Add the JitPack repository to your build file<br>
