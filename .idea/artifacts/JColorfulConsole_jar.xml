@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JColorfulConsole:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JColorfulConsole_jar</output-path>
+    <root id="archive" name="JColorfulConsole.jar">
+      <element id="module-output" name="JColorfulConsole" />
+    </root>
+  </artifact>
+</component>
