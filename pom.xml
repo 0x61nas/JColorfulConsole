@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.anas.jcolorfulconsole</groupId>
-    <artifactId>JColorfulConsole</artifactId>
+    <artifactId>jcolorfulconsole</artifactId>
     <version>0.1.4</version>
     <packaging>jar</packaging>
 
