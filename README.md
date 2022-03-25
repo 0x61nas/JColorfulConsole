@@ -8,6 +8,44 @@
  - Support background color.
  - Support text style.
 
+### How to add this library into your project
+#### Maven:
+**Step 1**. Add the JitPack repository to your build file
+```xml
+     <repositories>
+        <repository>
+             <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+```
+**Step 2**. Add the dependency
+```xml
+	<dependency>
+	    <groupId>com.github.Anas-Elgarhy</groupId>
+	    <artifactId>JColorfulConsole</artifactId>
+	    <version>0.1.0</version>
+	</dependency>
+```
+
+#### Gradle:
+**Step 1**. Add the JitPack repository to your build file<br>
+*Add it in your root build.gradle at the end of repositories:*
+```gradle
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+**Step 2**. Add the dependency
+```gradle
+	dependencies {
+	        implementation 'com.github.Anas-Elgarhy:JColorfulConsole:0.1.0'
+	}
+```
+
 ### Usage:
 ```java
 ConsoleManager manager = new DefaultConsoleManager(); // Create a new console manager
