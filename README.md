@@ -1,7 +1,7 @@
 ## JColorfulConsole
 
 ### JColorfulConsole is a console color library.
-
+[![](https://jitpack.io/v/Anas-Elgarhy/JColorfulConsole.svg)](https://jitpack.io/#Anas-Elgarhy/JColorfulConsole)
 
 ### Features:
  - Support text color.
