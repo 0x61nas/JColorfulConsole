@@ -85,3 +85,4 @@ public class Example1 {
 ```
 <img src="./Screenshots/3.png">
 
+#### License: MIT
