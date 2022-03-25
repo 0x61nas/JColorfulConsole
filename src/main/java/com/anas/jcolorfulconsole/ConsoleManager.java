@@ -2,10 +2,12 @@ package com.anas.jcolorfulconsole;
 
 import com.anas.jcolorfulconsole.color.BackgroundColor;
 import com.anas.jcolorfulconsole.color.TextColor;
+import com.anas.jcolorfulconsole.style.TextStyle;
 
 public interface ConsoleManager {
     void setTextColor(TextColor textColor);
     void setBackgroundColor(BackgroundColor backgroundColor);
+    void setTextStyle(TextStyle textStyle);
     void addProperty(ConsoleProperty property);
     void removeProperty(ConsoleProperty property);
 

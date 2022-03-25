@@ -5,6 +5,7 @@ import com.anas.jcolorfulconsole.ConsoleProperty;
 import com.anas.jcolorfulconsole.color.BackgroundColor;
 import com.anas.jcolorfulconsole.color.TextColor;
 import com.anas.jcolorfulconsole.stringmake.StringProcessor;
+import com.anas.jcolorfulconsole.style.TextStyle;
 
 import java.util.ArrayList;
 
@@ -18,6 +19,7 @@ public class DefaultConsoleManager implements ConsoleManager {
 
         properties.add(TextColor.DEFAULT);
         properties.add(BackgroundColor.DEFAULT);
+        properties.add(TextStyle.DEFAULT);
     }
 
     @Override
@@ -28,6 +30,11 @@ public class DefaultConsoleManager implements ConsoleManager {
     @Override
     public void setBackgroundColor(BackgroundColor backgroundColor) {
         properties.set(1, backgroundColor);
+    }
+
+    @Override
+    public void setTextStyle(TextStyle textStyle) {
+        properties.set(2, textStyle);
     }
 
     @Override
