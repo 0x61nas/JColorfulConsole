@@ -12,18 +12,39 @@ public class ColoredString {
     private TextColor backgroundColor;
     private ArrayList<TextStyle> styles;
 
+    /**
+     * Create a new empty ColoredString object
+     */
     public ColoredString() {
         this(null);
     }
 
+    /**
+     * Create a new ColoredString object with the given string
+     * @param str The string to be colored
+     * @param styles The styles to be applied to the string (optional)
+     */
     public ColoredString(String str, TextStyle... styles) {
         this(str, (TextColor) null, styles);
     }
 
+    /**
+     * Create a new ColoredString object with the given string and foreground color
+     * @param str The string to be colored
+     * @param foregroundColor The foreground color to be applied to the string
+     * @param styles The styles to be applied to the string (optional)
+     */
     public ColoredString(String str, TextColor foregroundColor, TextStyle... styles) {
         this(str, foregroundColor, null, styles);
     }
 
+    /**
+     * Create a new ColoredString object with the given string and foreground and background colors
+     * @param str The string to be colored
+     * @param foregroundColor The foreground color to be applied to the string
+     * @param backgroundColor The background color to be applied to the string
+     * @param styles The styles to be applied to the string (optional)
+     */
     public ColoredString(String str, TextColor foregroundColor, TextColor backgroundColor, TextStyle... styles) {
         strBytes = str != null ?
                 str.getBytes(StandardCharsets.UTF_8) : null;
@@ -36,10 +57,23 @@ public class ColoredString {
         }
     }
 
+    /**
+     * Create a new ColoredString object with the given string and foreground color as string of name of the color or hexadecimal color code
+     * @param str The string to be colored
+     * @param foregroundColor The foreground color to be applied to the string as string of name of the color or hexadecimal color code
+     * @param styles The styles to be applied to the string (optional)
+     */
     public ColoredString(String str, String foregroundColor, TextStyle... styles) {
         this(str, foregroundColor, null, styles);
     }
 
+    /**
+     * Create a new ColoredString object with the given string and foreground and background colors as string of name of the color or hexadecimal color code
+     * @param str The string to be colored
+     * @param foregroundColor The foreground color to be applied to the string as string of name of the color or hexadecimal color code
+     * @param backgroundColor The background color to be applied to the string as string of name of the color or hexadecimal color code
+     * @param styles The styles to be applied to the string (optional)
+     */
     public ColoredString(String str, String foregroundColor, String backgroundColor, TextStyle... styles) {
         this(str,
                 TextColor.Factory.fromString(foregroundColor),
@@ -47,35 +81,67 @@ public class ColoredString {
                 styles);
     }
 
-
+    /**
+     * Set the foreground color (text color)
+     * @param textColor The foreground color to be applied to the string
+     */
     public void setForegroundColor(TextColor textColor) {
         this.foregroundColor = textColor;
     }
 
-    public void setForegroundColor(String color) {
-        this.setForegroundColor(TextColor.Factory.fromString(color));
+    /**
+     * Set the foreground color (text color) as string of name of the color or hexadecimal color code
+     * @param textColor The foreground color to be applied to the string as string of name of the color or hexadecimal color code
+     */
+    public void setForegroundColor(String textColor) {
+        this.setForegroundColor(TextColor.Factory.fromString(textColor));
     }
 
+    /**
+     * Set the background color
+     * @param backgroundColor The background color to be applied to the string
+     */
     public void setBackgroundColor(TextColor backgroundColor) {
         this.backgroundColor = backgroundColor;
     }
 
-    public void setBackgroundColor(String color) {
-        this.setBackgroundColor(TextColor.Factory.fromString(color));
+
+    /**
+     * Set the background color as string of name of the color or hexadecimal color code
+     * @param backgroundColor The background color to be applied to the string as string of name of the color or hexadecimal color code
+     */
+    public void setBackgroundColor(String backgroundColor) {
+        this.setBackgroundColor(TextColor.Factory.fromString(backgroundColor));
     }
 
+    /**'
+     * Get the foreground color (text color)
+     * @return The foreground color, null if not set
+     */
     public TextColor getForegroundColor() {
         return foregroundColor;
     }
 
+    /**
+     * Get the background color
+     * @return The background color, null if not set
+     */
     public TextColor getBackgroundColor() {
         return backgroundColor;
     }
 
+    /**
+     * Get the string as byte array
+     * @return The string as byte array
+     */
     public byte[] getBytes() {
         return strBytes;
     }
 
+    /**
+     * Get the string with the applied styles and colors as byte array
+     * @return The string with the applied styles and colors as byte array
+     */
     public byte[] getColoredBytes() {
         if (strBytes == null) {
             return null;
@@ -83,10 +149,18 @@ public class ColoredString {
         return toString().getBytes(StandardCharsets.UTF_8);
     }
 
+    /**
+     * Set the string
+     * @param str The string to be colored
+     */
     public void setStr(String str) {
         strBytes = str.getBytes(StandardCharsets.UTF_8);
     }
 
+    /**
+     * Add style to the string
+     * @param style The style to be applied to the string
+     */
     public void addStyle(TextStyle style) {
         if (styles == null) {
             styles = new ArrayList<>();
@@ -94,6 +168,10 @@ public class ColoredString {
         styles.add(style);
     }
 
+    /**
+     * Remove style from the string
+     * @param style The style to be removed from the string
+     */
     public void removeStyle(TextStyle style) {
         if (styles == null) {
             return;
@@ -102,6 +180,10 @@ public class ColoredString {
     }
 
 
+    /**
+     * Get the string with the applied styles and colors
+     * @return The string with the applied styles and colors
+     */
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -143,6 +225,11 @@ public class ColoredString {
 
         return sb.toString();
     }
+
+    /**
+     * Get the string without the applied styles and colors
+     * @return The string without the applied styles and colors
+     */
     public String toNormalStringString() {
         return strBytes == null || strBytes.length < 1 ?
                 null : new String(strBytes, StandardCharsets.UTF_8);
