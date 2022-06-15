@@ -6,7 +6,12 @@
 ### Features:
  - Support text color.
  - Support background color.
+ - Support 256 colors (RGB).
+ - Support ANSI colors.
+ - Support indexed colors.
  - Support text style.
+ - Lightweight and fast.
+ - Easy to use.
 
 ### How to add this library into your project
 **Step 1**. Add the dependency
@@ -17,7 +22,6 @@
     <version>0.1.5</version>
 </dependency>
 ```
-**Step 2**. run this command `mvn install`
 
 #### Gradle:
 **Step 1**. Add the JitPack repository to your build file<br>
@@ -37,43 +41,30 @@ allprojects {
 	}
 ```
 
-### Usage:
-```java
-ConsoleManager manager = new DefaultConsoleManager(); // Create a new console manager
-manager.setTextColor(TextColor.LIGHT_RED); // Set text color
-manager.setBackgroundColor(BackgroundColor.DARK_BLUE); // Set background color
-   
-manager.println("Hello World!"); // Print text
-```
-<img src="./Screenshots/1.png">
+## Usage:
 
-```java
-ConsoleManager manager = new DefaultConsoleManager(); // Create a new console manager
-manager.setTextColor(TextColor.LIGHT_RED); // Set text color
-manager.setBackgroundColor(BackgroundColor.DARK_BLUE); // Set background color
-manager.setTextStyle(TextStyle.ITALIC); // Set text style
+## Requirements for development:
+- Maven
+- jdk 17
+- IntelliJ IDEA (not required but recommended)
 
-manager.println("Hello World!"); // Print text
-```
-<img src="./Screenshots/2.png">
+## TODO
+- [ ] Add Tests
+- [ ] Add Formatter
+- [ ] Add Documentation
+- [ ] Add more examples
 
-```java
-public class Example1 {
-    public static void main(String[] args) {
-        ConsoleManager manager = new DefaultConsoleManager();
+### Available in
 
-        manager.print("Hello", BackgroundColor.DARK_YELLOW, TextColor.DARK_WHITE, TextStyle.BOLD, TextStyle.ITALIC);
-        manager.print(", ", TextColor.LIGHT_GREEN);
-        manager.print("I'm ", TextColor.DARK_YELLOW);
-        manager.print("Anas", TextColor.LIGHT_BLUE, TextStyle.DOUBLE_UNDERLINE);
-        manager.println(" :D", TextColor.LIGHT_CYAN);
-        manager.println("\tFrom", TextColor.LIGHT_RED, TextStyle.ITALIC);
-        manager.print("Eg", BackgroundColor.LIGHT_RED);
-        manager.print("y", BackgroundColor.DARK_WHITE);
-        manager.print("pt", BackgroundColor.DARK_BLACK);
-    }
-}
-```
-<img src="./Screenshots/3.png">
+[![GitHub](https://img.shields.io/badge/GitHub-Main%20repo-brightgreen?style=for-the-badge&logo=GitHub)](https://github.com/Anas-Elgarhy/jpwd)
+[![GitLab](https://img.shields.io/badge/GitLab-Mirror%20repo-brightgreen?style=for-the-badge&logo=GitLab)](https://gitlab.com/java-utils1/jpwd)
+[![BitBucket](https://img.shields.io/badge/BitBucket-Mirror%20repo-brightgreen?style=for-the-badge&logo=BitBucket)](https://bitbucket.org/anas_elgarhy/jpwd)
+[![Codeberg](https://img.shields.io/badge/Codeberg-Mirror%20repo-brightgreen?style=for-the-badge&logo=Codeberg)](https://codeberg.org/java-utils/jpwd)
 
-#### License: MIT
+
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=Anas-Elgarhy_jpwd)](https://sonarcloud.io/summary/new_code?id=Anas-Elgarhy_jpwd)
+
+
+[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-black.svg)](https://sonarcloud.io/summary/new_code?id=Anas-Elgarhy_jpwd)
+
+![License: GPL-3.0](https://img.shields.io/badge/License-GPL%203.0-blue.svg)

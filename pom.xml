@@ -6,7 +6,7 @@
 
     <groupId>com.anas.jcolorfulconsole</groupId>
     <artifactId>jcolorfulconsole</artifactId>
-    <version>0.1.5</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <name>JColorfulConsole</name>
@@ -16,7 +16,7 @@
     <distributionManagement>
         <repository>
             <id>github</id>
-            <name>GitHub OWNER Apache Maven Packages</name>
+            <name>GitHub Anas Elgarhy Apache Maven Packages</name>
             <url>https://maven.pkg.github.com/Anas-Elgarhy/JColorfulConsole</url>
         </repository>
     </distributionManagement>
@@ -28,16 +28,16 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.2</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>8</source>
+                    <target>8</target>
                 </configuration>
             </plugin>
         </plugins>
     </build>
 
     <properties>
-        <maven.compiler.source>18</maven.compiler.source>
-        <maven.compiler.target>18</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
 </project>
