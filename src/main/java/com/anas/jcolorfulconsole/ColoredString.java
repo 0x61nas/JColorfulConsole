@@ -17,7 +17,7 @@ public class ColoredString {
     }
 
     public ColoredString(String str, TextStyle... styles) {
-        this(str, null, styles);
+        this(str, (TextColor) null, styles);
     }
 
     public ColoredString(String str, TextColor foregroundColor, TextStyle... styles) {
@@ -34,6 +34,10 @@ public class ColoredString {
             this.styles = new ArrayList<>();
             this.styles.addAll(Arrays.asList(styles));
         }
+    }
+
+    public ColoredString(String str, String foregroundColor, TextStyle... styles) {
+        this(str, foregroundColor, null, styles);
     }
 
     public ColoredString(String str, String foregroundColor, String backgroundColor, TextStyle... styles) {
@@ -76,7 +80,7 @@ public class ColoredString {
         if (strBytes == null) {
             return null;
         }
-        return toColoredString().getBytes(StandardCharsets.UTF_8);
+        return toString().getBytes(StandardCharsets.UTF_8);
     }
 
     public void setStr(String str) {
@@ -98,7 +102,8 @@ public class ColoredString {
     }
 
 
-    public String toColoredString() {
+    @Override
+    public String toString() {
         StringBuilder sb = new StringBuilder();
         final String escapeSequenceOpen = "\u001b[";
         final String escapeSequenceClose = "\u001b[0m";
@@ -120,7 +125,7 @@ public class ColoredString {
             sb.append(new String(backgroundColor.getBackgroundSGRSequence(), StandardCharsets.UTF_8));
             sb.append("m");
         }
-        sb.append(this);
+        sb.append(this.toNormalStringString());
 
         if (foregroundColor != null) {
             sb.append(escapeSequenceClose);
@@ -138,9 +143,7 @@ public class ColoredString {
 
         return sb.toString();
     }
-
-    @Override
-    public String toString() {
+    public String toNormalStringString() {
         return strBytes == null || strBytes.length < 1 ?
                 null : new String(strBytes, StandardCharsets.UTF_8);
     }
