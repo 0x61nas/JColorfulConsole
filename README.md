@@ -47,7 +47,7 @@ allprojects {
 public class Example1 {
     public static void main(String[] args) {
         ColoredString hello = new ColoredString("Hello, ");
-        hello.setForegroundColor(TextColor.ANSI.BLUE); // Set text color to red
+        hello.setForegroundColor(TextColor.ANSI.BLUE); // Set text color to blue
         hello.setBackgroundColor("magenta"); // Set background color to magenta
         hello.addStyle(TextStyle.BOLD); // Add bold style
 
