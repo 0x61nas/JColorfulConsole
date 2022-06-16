@@ -43,6 +43,49 @@ allprojects {
 
 ## Usage:
 
+```java
+public class Example1 {
+    public static void main(String[] args) {
+        ColoredString hello = new ColoredString("Hello, ");
+        hello.setForegroundColor(TextColor.ANSI.BLUE); // Set text color to red
+        hello.setBackgroundColor("magenta"); // Set background color to magenta
+        hello.addStyle(TextStyle.BOLD); // Add bold style
+
+        ColoredString world = new ColoredString();
+        world.setStr("World!"); // Set string to "World!"
+        world.setForegroundColor("#542413"); // Set text color
+        world.setBackgroundColor(new TextColor.RGB(34, 139, 34)); // Set background color
+        world.addStyle(TextStyle.ITALIC); // Add italic style
+
+        System.out.print(hello); // Print colored string
+        System.out.print(world); // Print colored string
+
+    }
+}
+```
+![Result of example 1](./Screenshots/1.0.1-example1.png)
+
+```java
+public class Example2 {
+    public static void main(String[] args) {
+        new Thread(() -> {
+            while (true) {
+                System.out.println(new ColoredString("Hi",
+                        new TextColor.RGB((int) (Math.random() * 255), (int) (Math.random() * 255), (int) (Math.random() * 255)),
+                        new TextColor.RGB((int) (Math.random() * 255), (int) (Math.random() * 255), (int) (Math.random() * 255)),
+                        TextStyle.values()[(int) (Math.random() * TextStyle.values().length)]));
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();
+    }
+}
+```
+![Result of example 2](./Screenshots/1.0.1-example2.gif)
+
 ## Requirements for development:
 - Maven
 - jdk 17

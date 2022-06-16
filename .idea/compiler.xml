@@ -6,8 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="JColorfulConsole" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="examples" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
