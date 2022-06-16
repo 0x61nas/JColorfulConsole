@@ -12,29 +12,47 @@
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Anas-Elgarhy_JColorfulConsole&metric=bugs)](https://sonarcloud.io/summary/new_code?id=Anas-Elgarhy_JColorfulConsole)
 
 ## Features:
- - Support text color.
- - Support background color.
- - Support 256 colors (RGB).
- - Support ANSI colors.
- - Support indexed colors.
- - Support text style.
- - Lightweight and fast.
- - Easy to use.
+
+- Support text color.
+- Support background color.
+- Support 256 colors (RGB).
+- Support ANSI colors.
+- Support indexed colors.
+- Support text style.
+- Lightweight and fast.
+- Easy to use.
 
 ## How to add this library into your project
+
 ### Maven
-**Step 1**. Add the dependency
+
+**Step 1**. Add the JitPack repository to your build file
+
 ```xml
+<repositories>
+	<repository>
+		<id>jitpack.io</id>
+		<url>https://jitpack.io</url>
+	</repository>
+</repositories>
+```
+
+**Step 2**. Add the dependency
+
+```xml
+
 <dependency>
-    <groupId>com.anas.jcolorfulconsole</groupId>
-    <artifactId>jcolorfulconsole</artifactId>
-    <version>1.0.1</version>
+	<groupId>com.anas.jcolorfulconsole</groupId>
+	<artifactId>jcolorfulconsole</artifactId>
+	<version>1.0.2</version>
 </dependency>
 ```
 
 #### Gradle:
+
 **Step 1**. Add the JitPack repository to your build file<br>
 *Add it in your root build.gradle at the end of repositories:*
+
 ```gradle
 allprojects {
     repositories {
@@ -43,10 +61,12 @@ allprojects {
     }
 }
 ```
+
 **Step 2**. Add the dependency
+
 ```gradle
 	dependencies {
-	        implementation 'com.github.Anas-Elgarhy:JColorfulConsole:1.0.1'
+	        implementation 'com.github.Anas-Elgarhy:JColorfulConsole:1.0.2'
 	}
 ```
 
@@ -72,6 +92,7 @@ public class Example1 {
     }
 }
 ```
+
 ![Result of example 1](./Screenshots/1.0.1-example1.png)
 
 ```java
@@ -93,14 +114,17 @@ public class Example2 {
     }
 }
 ```
+
 ![Result of example 2](./Screenshots/1.0.1-example2.gif)
 
 ## Requirements for development:
+
 - Maven
 - jdk 17
 - IntelliJ IDEA (not required but recommended)
 
 ## TODO
+
 - [ ] Add Tests
 - [ ] Add Formatter
 - [ ] Add Documentation
@@ -113,9 +137,7 @@ public class Example2 {
 [![BitBucket](https://img.shields.io/badge/BitBucket-Mirror%20repo-brightgreen?style=for-the-badge&logo=BitBucket)](https://bitbucket.org/anas_elgarhy/jcolorfulconsole)
 [![Codeberg](https://img.shields.io/badge/Codeberg-Mirror%20repo-brightgreen?style=for-the-badge&logo=Codeberg)](https://codeberg.org/anas-elgarhy/JColorfulConsole)
 
-
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=Anas-Elgarhy_JColorfulConsole)](https://sonarcloud.io/summary/new_code?id=Anas-Elgarhy_JColorfulConsole)
-
 
 [![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-black.svg)](https://sonarcloud.io/summary/new_code?id=Anas-Elgarhy_JColorfulConsole)
 
