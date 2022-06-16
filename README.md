@@ -29,6 +29,7 @@
 **Step 1**. Add the JitPack repository to your build file
 
 ```xml
+
 <repositories>
 	<repository>
 		<id>jitpack.io</id>
@@ -40,10 +41,9 @@
 **Step 2**. Add the dependency
 
 ```xml
-
 <dependency>
-	<groupId>com.anas.jcolorfulconsole</groupId>
-	<artifactId>jcolorfulconsole</artifactId>
+	<groupId>com.github.Anas-Elgarhy</groupId>
+	<artifactId>JColorfulConsole</artifactId>
 	<version>1.0.3</version>
 </dependency>
 ```
