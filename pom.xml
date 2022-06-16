@@ -6,8 +6,8 @@
 
     <groupId>com.anas.jcolorfulconsole</groupId>
     <artifactId>jcolorfulconsole</artifactId>
-    <version>1.0.1-t1.1</version>
-    <packaging>jar</packaging>
+    <version>1.0.1-t1.2</version>
+    <packaging>pom</packaging>
 
     <name>JColorfulConsole</name>
     <description>A colorful console for Java</description>
