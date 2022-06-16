@@ -1,9 +1,18 @@
-## JColorfulConsole
+# JColorfulConsole is a console color library.
 
-### JColorfulConsole is a console color library.
 [![](https://jitpack.io/v/Anas-Elgarhy/JColorfulConsole.svg)](https://jitpack.io/#Anas-Elgarhy/JColorfulConsole)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=Anas-Elgarhy_JColorfulConsole&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=Anas-Elgarhy_JColorfulConsole)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=Anas-Elgarhy_JColorfulConsole&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=Anas-Elgarhy_JColorfulConsole)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=Anas-Elgarhy_JColorfulConsole&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=Anas-Elgarhy_JColorfulConsole)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Anas-Elgarhy_JColorfulConsole&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Anas-Elgarhy_JColorfulConsole)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=Anas-Elgarhy_JColorfulConsole&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=Anas-Elgarhy_JColorfulConsole)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=Anas-Elgarhy_JColorfulConsole&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=Anas-Elgarhy_JColorfulConsole)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=Anas-Elgarhy_JColorfulConsole&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=Anas-Elgarhy_JColorfulConsole)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Anas-Elgarhy_JColorfulConsole&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=Anas-Elgarhy_JColorfulConsole)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=Anas-Elgarhy_JColorfulConsole&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=Anas-Elgarhy_JColorfulConsole)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Anas-Elgarhy_JColorfulConsole&metric=bugs)](https://sonarcloud.io/summary/new_code?id=Anas-Elgarhy_JColorfulConsole)
 
-### Features:
+## Features:
  - Support text color.
  - Support background color.
  - Support 256 colors (RGB).
@@ -13,7 +22,8 @@
  - Lightweight and fast.
  - Easy to use.
 
-### How to add this library into your project
+## How to add this library into your project
+### Maven
 **Step 1**. Add the dependency
 ```xml
 <dependency>
@@ -41,7 +51,7 @@ allprojects {
 	}
 ```
 
-## Usage:
+# Usage:
 
 ```java
 public class Example1 {
