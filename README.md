@@ -130,6 +130,10 @@ public class Example2 {
 - [ ] Add Documentation
 - [ ] Add more examples
 
+## Projects using this library 💙
+- [jls](https://github.com/Anas-Elgarhy/jls)
+- [jpwd](https://github.com/Anas-Elgarhy/jpwd)
+
 ### Available in
 
 [![GitHub](https://img.shields.io/badge/GitHub-Main%20repo-brightgreen?style=for-the-badge&logo=GitHub)](https://github.com/Anas-Elgarhy/JColorfulConsole)
