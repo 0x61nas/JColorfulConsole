@@ -42,9 +42,9 @@
 
 ```xml
 <dependency>
-	<groupId>com.github.Anas-Elgarhy</groupId>
+	<groupId>com.github.0x61nas</groupId>
 	<artifactId>JColorfulConsole</artifactId>
-	<version>1.0.3</version>
+	<version>1.0.4</version>
 </dependency>
 ```
 
@@ -66,7 +66,7 @@ allprojects {
 
 ```gradle
 	dependencies {
-	        implementation 'com.github.Anas-Elgarhy:JColorfulConsole:1.0.3'
+	        implementation 'com.github.0x61nas:JColorfulConsole:1.0.4'
 	}
 ```
 
